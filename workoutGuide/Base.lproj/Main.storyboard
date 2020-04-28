@@ -21,7 +21,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jumping" translatesAutoresizingMaskIntoConstraints="NO" id="Ibf-2w-f9c">
                                 <rect key="frame" x="35" y="81" width="240" height="212"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="No0-Yv-HeY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="No0-Yv-HeY" customClass="customButton" customModule="workoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="32" y="331" width="240" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Spo-j5-9Jm"/>
@@ -31,7 +31,7 @@
                                     <segue destination="dNv-dL-3oD" kind="show" id="oUj-Sa-PKz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0C-z2-CXV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0C-z2-CXV" customClass="customButton" customModule="workoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="32" y="391" width="240" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="udg-EF-32i"/>
@@ -41,14 +41,14 @@
                                     <segue destination="frT-eH-NqD" kind="show" id="QJZ-cS-E25"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-5j-FmF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fx-5j-FmF" customClass="customButton" customModule="workoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="32" y="451" width="240" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RWF-Of-SZc"/>
                                 </constraints>
                                 <state key="normal" title="SETTINGS"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fL-1f-VpX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fL-1f-VpX" customClass="customButton" customModule="workoutGuide" customModuleProvider="target">
                                 <rect key="frame" x="32" y="509" width="240" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tc0-7j-FS2"/>
@@ -83,41 +83,41 @@
             </objects>
             <point key="canvasLocation" x="-1513" y="-137"/>
         </scene>
-        <!--View Controller-->
+        <!--Workout View Controller-->
         <scene sceneID="CG5-eJ-Y0i">
             <objects>
-                <viewController id="dNv-dL-3oD" sceneMemberID="viewController">
+                <viewController id="dNv-dL-3oD" customClass="workoutViewController" customModule="workoutGuide" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tFF-oj-Hyf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60E-xf-TyG">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60E-xf-TyG">
                                 <rect key="frame" x="38" y="123" width="240" height="40"/>
-                                <state key="normal" title="CORE WORKOUTS"/>
+                                <state key="normal" title="."/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDW-d4-NcI">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDW-d4-NcI">
                                 <rect key="frame" x="38" y="183" width="240" height="40"/>
-                                <state key="normal" title="CORE WORKOUTS"/>
+                                <state key="normal" title="."/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kt-7M-Cxo">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kt-7M-Cxo">
                                 <rect key="frame" x="38" y="234" width="240" height="40"/>
-                                <state key="normal" title="CORE WORKOUTS"/>
+                                <state key="normal" title="."/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAf-5v-Fp4">
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAf-5v-Fp4">
                                 <rect key="frame" x="38" y="292" width="240" height="40"/>
-                                <state key="normal" title="CORE WORKOUTS"/>
+                                <state key="normal" title="."/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6I-W6-hxj">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6I-W6-hxj">
                                 <rect key="frame" x="38" y="354" width="240" height="40"/>
-                                <state key="normal" title="CORE WORKOUTS"/>
+                                <state key="normal" title="."/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pF5-YT-BMW">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pF5-YT-BMW">
                                 <rect key="frame" x="38" y="414" width="240" height="40"/>
-                                <state key="normal" title="CORE WORKOUTS"/>
+                                <state key="normal" title="."/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zd-IB-6zX">
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5zd-IB-6zX">
                                 <rect key="frame" x="38" y="465" width="240" height="40"/>
-                                <state key="normal" title="CORE WORKOUTS"/>
+                                <state key="normal" title="."/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -201,7 +201,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6y5-rq-nw9">
                                 <rect key="frame" x="16" y="303" width="288" height="247"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
